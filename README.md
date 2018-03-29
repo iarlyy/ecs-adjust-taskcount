@@ -11,7 +11,7 @@ desired_count = 1
 
 new_service_desired_count = 3 (1 * cluster_size)
 
-If a scale up/down happen, lambda will increase/decrease of desired count of the service.
+If a scale up/down happen, lambda will increase/decrease the desired count of the service.
 
 
 It might be useful when you don't have cloudwatch metrics to use as triggers to scale up/down your service or you just want to keep the number tasks(ex: tasks using HOST network) to the same number of running instances.
