@@ -4,8 +4,11 @@ Given an ECS service/task, this lambda function will adjust the desired count of
 cluster_size * desired_count = new_service_desired_count
 
 Ex: 
+
 cluster_size = 3 (3 ecs instances running)
+
 desired_count = 1 
+
 new_service_desired_count = 3 (1 * cluster_size)
 
 If a scale up/down happen, lambda will increase/decrease of desired count of the service.
